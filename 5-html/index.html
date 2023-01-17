@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>Klient</legend>
+            <label for="name">Imię:</label>
+            <input type="text" name="name" id="name" placeholder="Wpisz imię" required autofocus> <br><br>
+            <label for="phone">Numer telefonu:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Wpisz numer telefonu"
+                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Wpisz E-mail" required multiple>
+
+            <!-- Note: Normally, if you specify the required attribute, the user must enter a valid email address for the field to be considered valid. However, if you add the multiple attribute, a list of zero email addresses (an empty string, or one which is entirely whitespace) is a valid value. In other words, the user does not have to enter even one email address when multiple is specified, regardless of the value of required. -->
+
+        </fieldset>
+        <fieldset>
+            <legend>Książka</legend>
+            <label for="book">Książki:</label>
+            <select name="book" id="book">
+                <option value="Harry Potter">Harry Potter</option>
+                <option value="Lord of the rings">Lord of the rings</option>
+                <option value="Alicja z Krainy Czarów">Alicja z Krainy Czarów</option>
+                <option value="Bolek i Lolek">Bolek i Lolek</option>
+                <option value="Pan Kleks">Pan Kleks</option>
+            </select>
+            <label for="quantity">Ilość (Max 5):</label>
+            <input type="number" name="quantity" id="quantity" min="1" max="5">
+        </fieldset>
+    </form>
+</body>
+
+</html>
