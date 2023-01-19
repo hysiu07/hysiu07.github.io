@@ -1,0 +1,12 @@
+[for]{
+    background-color: aqua;
+}
+
+[for="email"]{
+    background-color: blue;
+}
+
+
+[placeholder~="Wpisz"]{
+    background-color: tomato;
+}
