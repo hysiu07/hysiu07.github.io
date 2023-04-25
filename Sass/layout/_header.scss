@@ -1,0 +1,49 @@
+.header {
+	position: relative;
+	width: 100%;
+	height: 85%;
+	font-size: 40px;
+	background-color: white;
+
+	&__circle-img-big {
+		position: absolute;
+		left: -100px;
+		top: 440px;
+		height: 550px;
+		width: 550px;
+		border-radius: 50%;
+		background-color: #a4508b;
+		background-image: linear-gradient(45deg,
+				hsl(255deg 51% 50%) 4%,
+				hsl(261deg 52% 51%) 23%,
+				hsl(266deg 54% 53%) 37%,
+				hsl(271deg 56% 54%) 49%,
+				hsl(276deg 59% 55%) 60%,
+				hsl(280deg 61% 56%) 69%,
+				hsl(284deg 63% 58%) 78%,
+				hsl(288deg 66% 59%) 86%,
+				hsl(292deg 69% 60%) 93%,
+				hsl(296deg 72% 61%) 100%);
+	}
+
+	&__circle-img-small {
+		position: absolute;
+		left: 600px;
+		top: 100px;
+		height: 170px;
+		width: 170px;
+		border-radius: 50%;
+		background-image: linear-gradient(45deg,
+				hsl(296deg 72% 61%) 4%,
+				hsl(292deg 69% 60%) 23%,
+				hsl(288deg 66% 59%) 37%,
+				hsl(284deg 63% 58%) 49%,
+				hsl(280deg 61% 56%) 60%,
+				hsl(276deg 59% 55%) 69%,
+				hsl(271deg 56% 54%) 78%,
+				hsl(266deg 54% 53%) 86%,
+				hsl(261deg 52% 51%) 93%,
+				hsl(255deg 51% 50%) 100%);
+	}
+
+}
