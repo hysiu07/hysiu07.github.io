@@ -30,7 +30,6 @@
 		border-left: 4px solid $main-color;
 		animation: tipingborder 1s infinite, typing 12s steps(14) infinite alternate;
 	}
-	
 
 	&__text {
 		position: relative;
@@ -111,5 +110,4 @@
 		);
 		animation: move-small-circle 50s linear infinite;
 	}
-	
 }
