@@ -17,7 +17,7 @@ body {
   position: absolute;
   right: 30px;
   display: none;
-  margin-right: 20px;
+  margin-right: 0;
   flex-direction: column;
   justify-content: space-around;
   padding: 10px;
@@ -31,7 +31,7 @@ body {
   height: 5px;
   width: 100%;
   border-radius: 30px;
-  background-image: linear-gradient(45deg, hsl(255, 51%, 50%) 4%, hsl(261, 52%, 51%) 23%, hsl(266, 54%, 53%) 37%, hsl(271, 56%, 54%) 49%, hsl(276, 59%, 55%) 60%, hsl(280, 61%, 56%) 69%, hsl(284, 63%, 58%) 78%, hsl(288, 66%, 59%) 86%, hsl(292, 69%, 60%) 93%, hsl(296, 72%, 61%) 100%);
+  background-image: linear-gradient(90deg, hsl(281, 92%, 29%) 0%, hsl(281, 89%, 33%) 17%, hsl(281, 87%, 36%) 34%, hsl(282, 84%, 39%) 48%, hsl(282, 81%, 42%) 60%, hsl(282, 78%, 45%) 69%, hsl(282, 76%, 49%) 77%, hsl(283, 73%, 52%) 84%, hsl(283, 70%, 55%) 90%, hsl(283, 68%, 58%) 95%, hsl(283, 65%, 61%) 100%);
 }
 .nav-container__bars-btn .first-bar {
   width: 40%;
@@ -41,6 +41,10 @@ body {
   width: 70%;
   transition: 0.5s;
 }
+.nav-container__bars-btn .fa-xmark {
+  font-size: 50px;
+  color: white;
+}
 
 .nav-container__bars-btn:hover .first-bar {
   width: 100%;
@@ -49,12 +53,34 @@ body {
   width: 100%;
 }
 
+@keyframes moveLink {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 0;
+  }
+}
 .header {
   position: relative;
+  padding: 10%;
   width: 100%;
-  height: 85%;
-  font-size: 40px;
+  height: 100vh;
   background-color: white;
+  overflow: hidden;
+}
+.header__text {
+  position: relative;
+  width: 60%;
+}
+.header__text span {
+  font-size: 3rem;
+}
+.header__text p {
+  font-size: 2rem;
+}
+.header__title {
+  font-size: 6rem;
 }
 .header__circle-img-big {
   position: absolute;
@@ -63,21 +89,22 @@ body {
   height: 550px;
   width: 550px;
   border-radius: 50%;
-  background-color: #a4508b;
-  background-image: linear-gradient(45deg, hsl(255, 51%, 50%) 4%, hsl(261, 52%, 51%) 23%, hsl(266, 54%, 53%) 37%, hsl(271, 56%, 54%) 49%, hsl(276, 59%, 55%) 60%, hsl(280, 61%, 56%) 69%, hsl(284, 63%, 58%) 78%, hsl(288, 66%, 59%) 86%, hsl(292, 69%, 60%) 93%, hsl(296, 72%, 61%) 100%);
+  background-image: linear-gradient(40deg, hsl(255, 88%, 44%) 0%, hsl(258, 86%, 45%) 15%, hsl(261, 83%, 47%) 27%, hsl(264, 82%, 49%) 37%, hsl(266, 79%, 51%) 45%, hsl(269, 77%, 53%) 53%, hsl(272, 74%, 54%) 61%, hsl(275, 72%, 56%) 70%, hsl(278, 70%, 58%) 79%, hsl(280, 68%, 60%) 89%, hsl(283, 65%, 61%) 100%);
 }
 .header__circle-img-small {
   position: absolute;
-  left: 600px;
+  left: 500px;
   top: 100px;
   height: 170px;
   width: 170px;
   border-radius: 50%;
-  background-image: linear-gradient(45deg, hsl(296, 72%, 61%) 4%, hsl(292, 69%, 60%) 23%, hsl(288, 66%, 59%) 37%, hsl(284, 63%, 58%) 49%, hsl(280, 61%, 56%) 60%, hsl(276, 59%, 55%) 69%, hsl(271, 56%, 54%) 78%, hsl(266, 54%, 53%) 86%, hsl(261, 52%, 51%) 93%, hsl(255, 51%, 50%) 100%);
+  background-image: linear-gradient(40deg, hsl(283, 65%, 61%) 0%, hsl(280, 68%, 60%) 15%, hsl(278, 70%, 58%) 27%, hsl(275, 72%, 56%) 37%, hsl(272, 74%, 54%) 45%, hsl(269, 77%, 53%) 53%, hsl(266, 79%, 51%) 61%, hsl(264, 82%, 49%) 70%, hsl(261, 83%, 47%) 79%, hsl(258, 86%, 45%) 89%, hsl(255, 88%, 44%) 100%);
 }
 
 .nav {
-  position: fixed;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -94,7 +121,7 @@ body {
 }
 .nav .nav-container__logo {
   display: flex;
-  font-size: 25px;
+  font-size: 2.5em;
 }
 .nav .nav-container__logo-dot {
   width: 15px;
@@ -102,8 +129,10 @@ body {
   border-radius: 50%;
   background-color: #b95cdd;
 }
-.nav .nav-container__logo-test {
+.nav .nav-container__logo-text {
+  margin-left: 10px;
   font-weight: bold;
+  font-family: "Kumbh Sans", "sans-serif";
 }
 .nav .nav-container__links {
   display: flex;
@@ -114,14 +143,14 @@ body {
   list-style: none;
 }
 .nav .nav-container__links li a {
+  font-family: "Kumbh Sans", "sans-serif";
   text-decoration: none;
-  font-size: 20px;
-  color: black;
-  text-transform: uppercase;
+  font-size: 2em;
+  color: #58545a;
 }
 .nav .nav-container__social-icons {
   display: none;
-  font-size: 30px;
+  font-size: 3em;
 }
 .nav .nav-container__social-icons .fa-brands {
   margin: 0 10px;
@@ -158,10 +187,23 @@ body {
     background-color: #b95cdd;
   }
   .nav .nav-container__links li {
+    position: relative;
     margin: 30px;
   }
   .nav .nav-container__links li a {
     font-size: 3em;
-    color: white;
+    color: #fff;
+  }
+  .nav .nav-container__links li::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-bottom: 3px solid #fff;
+  }
+  .nav .nav-container__links a:hover li::before {
+    width: 100px;
   }
 }/*# sourceMappingURL=style.css.map */

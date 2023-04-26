@@ -4,31 +4,32 @@
 	position: absolute;
 	right: 30px;
 	display: none;
-	margin-right: 20px;
+	margin-right: 0;
 	flex-direction: column;
 	justify-content: space-around;
 	padding: 10px;
 	width: 60px;
 	height: 60px;
 	border-radius: 10px;
-	border: 1px solid #b95cdd;
+	border: 1px solid $main-color;
 	cursor: pointer;
 	.bar {
 		height: 5px;
 		width: 100%;
 		border-radius: 30px;
 		background-image: linear-gradient(
-			45deg,
-			hsl(255deg 51% 50%) 4%,
-			hsl(261deg 52% 51%) 23%,
-			hsl(266deg 54% 53%) 37%,
-			hsl(271deg 56% 54%) 49%,
-			hsl(276deg 59% 55%) 60%,
-			hsl(280deg 61% 56%) 69%,
-			hsl(284deg 63% 58%) 78%,
-			hsl(288deg 66% 59%) 86%,
-			hsl(292deg 69% 60%) 93%,
-			hsl(296deg 72% 61%) 100%
+			90deg,
+			hsl(281deg 92% 29%) 0%,
+			hsl(281deg 89% 33%) 17%,
+			hsl(281deg 87% 36%) 34%,
+			hsl(282deg 84% 39%) 48%,
+			hsl(282deg 81% 42%) 60%,
+			hsl(282deg 78% 45%) 69%,
+			hsl(282deg 76% 49%) 77%,
+			hsl(283deg 73% 52%) 84%,
+			hsl(283deg 70% 55%) 90%,
+			hsl(283deg 68% 58%) 95%,
+			hsl(283deg 65% 61%) 100%
 		);
 	}
 	.first-bar {
@@ -39,6 +40,10 @@
 		width: 70%;
 		transition: 0.5s;
 	}
+	.fa-xmark {
+		font-size: 50px;
+		color: white;
+	}
 }
 .nav-container__bars-btn:hover {
 	.first-bar {
@@ -46,5 +51,16 @@
 	}
 	.second-bar {
 		width: 100%;
+	}
+}
+
+// ----animation-nav-links----
+
+@keyframes moveLink {
+	0% {
+		right: -500px;
+	}
+	100% {
+		right: 0;
 	}
 }
