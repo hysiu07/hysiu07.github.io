@@ -1,29 +1,73 @@
 .header {
 	position: relative;
-	padding: 10%;
+	padding: 10% 10% 10% 15%;
 	width: 100%;
-	height: 100vh;
+	height: 85vh;
 	background-color: white;
 	overflow: hidden;
+
+	&__title-first-text {
+		font-size: 6em;
+		font-family: $small-title-font;
+		color: $color-text;
+	}
+	&__title-sec-text {
+		position: relative;
+		margin-left: 15px;
+		font-size: 6em;
+		color: $main-color;
+		font-family: $small-title-font;
+		text-shadow: 0 0 5px $main-color;
+	}
+	&__title-sec-text::before {
+		content: '';
+		position: absolute;
+
+		left: 0;
+		width: 600px;
+		height: 75px;
+		background-color: white;
+		border-left: 4px solid $main-color;
+		animation: tipingborder 1s infinite, typing 12s steps(14) infinite alternate;
+	}
+	
+
 	&__text {
 		position: relative;
-		width: 60%;
-		span {
-			font-size: 3rem;
-		}
-	
-		p {
-			font-size: 2rem;
-		}
+		width: 70%;
+	}
+	&__small-title {
+		font-size: 3em;
+		font-family: $small-title-font;
+	}
+	&__small-title-element {
+		display: inline-block;
+		width: 35px;
+		height: 5px;
+		border-radius: 40px;
+		background-color: $main-color;
 	}
 	&__title {
 		font-size: 6rem;
 	}
+	&__discription {
+		font-size: 1.8em;
+		max-width: 60%;
+		font-family: $text-font;
+	}
+	&__cv-btn {
+		margin: 20px 20px 0 0;
+	}
+	&__contact-btn {
+		a {
+			text-decoration: none;
+		}
+	}
 
 	&__circle-img-big {
 		position: absolute;
-		left: -100px;
-		top: 440px;
+		left: -300px;
+		top: 220px;
 		height: 550px;
 		width: 550px;
 		border-radius: 50%;
@@ -41,12 +85,13 @@
 			hsl(280deg 68% 60%) 89%,
 			hsl(283deg 65% 61%) 100%
 		);
+		animation: move-big-circle 20s linear infinite;
 	}
 
 	&__circle-img-small {
 		position: absolute;
-		left: 500px;
-		top: 100px;
+		left: 400px;
+		top: 20px;
 		height: 170px;
 		width: 170px;
 		border-radius: 50%;
@@ -64,5 +109,7 @@
 			hsl(258deg 86% 45%) 89%,
 			hsl(255deg 88% 44%) 100%
 		);
+		animation: move-small-circle 50s linear infinite;
 	}
+	
 }

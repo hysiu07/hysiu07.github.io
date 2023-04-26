@@ -13,6 +13,26 @@ body {
   width: 100%;
 }
 
+.btn {
+  padding: 10px 20px;
+  font-size: 1.8em;
+  border-radius: 8px;
+  border: 2px solid #b95cdd;
+  background-color: white;
+  color: #58545a;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #b95cdd;
+}
+.btn:hover a {
+  color: white;
+}
+
 .nav-container__bars-btn {
   position: absolute;
   right: 30px;
@@ -61,55 +81,157 @@ body {
     right: 0;
   }
 }
+@keyframes move-small-circle {
+  0% {
+    left: 400px;
+    top: 20px;
+  }
+  25% {
+    left: 700px;
+    top: -100px;
+  }
+  50% {
+    left: 1000px;
+    top: 20px;
+  }
+  75% {
+    left: 1200px;
+    top: -100px;
+  }
+  100% {
+    left: 400px;
+    top: 20px;
+  }
+}
+@keyframes move-big-circle {
+  0% {
+    left: -300px;
+    top: 220px;
+  }
+  25% {
+    left: -90px;
+    top: 420px;
+  }
+  75% {
+    left: -300px;
+    top: 420px;
+  }
+  100% {
+    left: -300px;
+    top: 220px;
+  }
+}
+@keyframes typing {
+  0% {
+    left: 0;
+  }
+  7% {
+    left: 95%;
+    margin: 0 -10px 0 30px;
+  }
+  100% {
+    left: 95%;
+    margin: 0 -10px 0 30px;
+  }
+}
+@keyframes tipingborder {
+  0% {
+    border-left: none;
+  }
+  100% {
+    border-left: 4px solid #b95cdd;
+  }
+}
 .header {
   position: relative;
-  padding: 10%;
+  padding: 10% 10% 10% 15%;
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   background-color: white;
   overflow: hidden;
 }
+.header__title-first-text {
+  font-size: 6em;
+  font-family: "Kumbh Sans", "sans-serif";
+  color: #58545a;
+}
+.header__title-sec-text {
+  position: relative;
+  margin-left: 15px;
+  font-size: 6em;
+  color: #b95cdd;
+  font-family: "Kumbh Sans", "sans-serif";
+  text-shadow: 0 0 5px #b95cdd;
+}
+.header__title-sec-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 600px;
+  height: 75px;
+  background-color: white;
+  border-left: 4px solid #b95cdd;
+  animation: tipingborder 1s infinite, typing 12s steps(14) infinite alternate;
+}
 .header__text {
   position: relative;
-  width: 60%;
+  width: 70%;
 }
-.header__text span {
-  font-size: 3rem;
+.header__small-title {
+  font-size: 3em;
+  font-family: "Kumbh Sans", "sans-serif";
 }
-.header__text p {
-  font-size: 2rem;
+.header__small-title-element {
+  display: inline-block;
+  width: 35px;
+  height: 5px;
+  border-radius: 40px;
+  background-color: #b95cdd;
 }
 .header__title {
   font-size: 6rem;
 }
+.header__discription {
+  font-size: 1.8em;
+  max-width: 60%;
+  font-family: "Kumbh Sans", "sans-serif";
+}
+.header__cv-btn {
+  margin: 20px 20px 0 0;
+}
+.header__contact-btn a {
+  text-decoration: none;
+}
 .header__circle-img-big {
   position: absolute;
-  left: -100px;
-  top: 440px;
+  left: -300px;
+  top: 220px;
   height: 550px;
   width: 550px;
   border-radius: 50%;
   background-image: linear-gradient(40deg, hsl(255, 88%, 44%) 0%, hsl(258, 86%, 45%) 15%, hsl(261, 83%, 47%) 27%, hsl(264, 82%, 49%) 37%, hsl(266, 79%, 51%) 45%, hsl(269, 77%, 53%) 53%, hsl(272, 74%, 54%) 61%, hsl(275, 72%, 56%) 70%, hsl(278, 70%, 58%) 79%, hsl(280, 68%, 60%) 89%, hsl(283, 65%, 61%) 100%);
+  animation: move-big-circle 20s linear infinite;
 }
 .header__circle-img-small {
   position: absolute;
-  left: 500px;
-  top: 100px;
+  left: 400px;
+  top: 20px;
   height: 170px;
   width: 170px;
   border-radius: 50%;
   background-image: linear-gradient(40deg, hsl(283, 65%, 61%) 0%, hsl(280, 68%, 60%) 15%, hsl(278, 70%, 58%) 27%, hsl(275, 72%, 56%) 37%, hsl(272, 74%, 54%) 45%, hsl(269, 77%, 53%) 53%, hsl(266, 79%, 51%) 61%, hsl(264, 82%, 49%) 70%, hsl(261, 83%, 47%) 79%, hsl(258, 86%, 45%) 89%, hsl(255, 88%, 44%) 100%);
+  animation: move-small-circle 50s linear infinite;
 }
 
 .nav {
   position: sticky;
+  background-color: white;
   top: 0;
   z-index: 1000;
   display: flex;
   justify-content: center;
   width: 100%;
   height: 15vh;
-  border-bottom: 1px solid black;
 }
 .nav .nav-container {
   display: flex;

@@ -3,11 +3,29 @@
 	margin: 0;
 	padding: 0;
 }
-html{
+html {
 	font-size: 62.5%;
 }
 body {
 	position: relative;
 	width: 100%;
 }
-
+.btn {
+	padding: 10px 20px;
+	font-size: 1.8em;
+	border-radius: 8px;
+	border: 2px solid $main-color;
+	background-color: white;
+	color: $color-text;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+		rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.btn:hover {
+	color: white;
+	background-color: $main-color;
+	a {
+		color: white;
+	}
+}

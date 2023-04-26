@@ -64,3 +64,69 @@
 		right: 0;
 	}
 }
+
+// ----animation-header-circles----
+@keyframes move-small-circle {
+		0% {
+			left: 400px;
+			top: 20px;
+		}
+		25% {
+			left: 700px;
+			top: -100px;
+		}
+		50% {
+			left: 1000px;
+			top: 20px;
+		}
+		75% {
+			left: 1200px;
+			top: -100px;
+		}
+		100% {
+			left: 400px;
+			top: 20px;
+		}
+	}
+	@keyframes move-big-circle {
+		0% {
+			left: -300px;
+			top: 220px;
+		}
+
+		25% {
+			left: -90px;
+			top: 420px;
+		}
+		75%{
+			left: -300px;
+			top: 420px;
+		}
+
+		100% {
+			left: -300px;
+			top: 220px;
+		}
+	}
+// ----animation-header-tiping----
+@keyframes typing {
+		0% {
+			left: 0;
+		}
+		7% {
+			left: 95%;
+			margin: 0 -10px 0 30px;
+		}
+		100% {
+			left: 95%;
+			margin: 0 -10px 0 30px;
+		}
+	}
+	@keyframes tipingborder {
+		0% {
+			border-left: none;
+		}
+		100% {
+			border-left: 4px solid $main-color;
+		}
+	}
