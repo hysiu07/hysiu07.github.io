@@ -73,6 +73,12 @@ body {
   width: 100%;
 }
 
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 2000px;
+}
+
 @keyframes moveLink {
   0% {
     right: -500px;
@@ -140,6 +146,17 @@ body {
   }
   100% {
     border-left: 4px solid #b95cdd;
+  }
+}
+@keyframes move-splash {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 .header {
@@ -222,7 +239,192 @@ body {
   background-image: linear-gradient(40deg, hsl(283, 65%, 61%) 0%, hsl(280, 68%, 60%) 15%, hsl(278, 70%, 58%) 27%, hsl(275, 72%, 56%) 37%, hsl(272, 74%, 54%) 45%, hsl(269, 77%, 53%) 53%, hsl(266, 79%, 51%) 61%, hsl(264, 82%, 49%) 70%, hsl(261, 83%, 47%) 79%, hsl(258, 86%, 45%) 89%, hsl(255, 88%, 44%) 100%);
   animation: move-small-circle 50s linear infinite;
 }
+.header__splash-img {
+  position: absolute;
+  z-index: 200;
+  top: 100px;
+  left: 1000px;
+  width: 700px;
+  height: 700px;
+  filter: invert(51%) sepia(53%) saturate(3349%) hue-rotate(245deg) brightness(90%) contrast(91%);
+  animation: move-splash 5s infinite;
+}
 
+@media (max-width: 364px) {
+  .header__small-title {
+    font-size: 2.1rem;
+  }
+  .header__title-first-text {
+    font-size: 3.5rem;
+  }
+  .header__title-sec-text {
+    font-size: 3.5rem;
+  }
+  .header__discription {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    max-width: 100%;
+  }
+  .header__text {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .header__title-sec-text::before {
+    height: 50px;
+    display: none;
+  }
+  .header__cv-btn {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  .header__contact-btn a {
+    font-size: 1.6rem;
+  }
+  .header__circle-img-small {
+    display: none;
+  }
+}
+@media (min-width: 365px) and (max-width: 576px) {
+  .header__small-title {
+    font-size: 2.5rem;
+  }
+  .header__title-first-text {
+    font-size: 4rem;
+  }
+  .header__title-sec-text {
+    font-size: 4rem;
+  }
+  .header__discription {
+    margin-top: 10px;
+    font-size: 2rem;
+    max-width: 100%;
+  }
+  .header__text {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .header__title-sec-text::before {
+    height: 50px;
+    display: none;
+  }
+  .header__cv-btn {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .header__contact-btn a {
+    font-size: 2rem;
+  }
+  .header__circle-img-small {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .header__small-title {
+    font-size: 3.5rem;
+  }
+  .header__title-first-text {
+    font-size: 4.5rem;
+  }
+  .header__title-sec-text {
+    font-size: 4.5rem;
+  }
+  .header__discription {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    max-width: 80%;
+  }
+  .header__splash-img {
+    display: none;
+  }
+  .header__text {
+    margin: 0 auto;
+    width: 100%;
+    top: 100px;
+  }
+  .header__title-sec-text::before {
+    height: 60px;
+  }
+  .header__cv-btn {
+    font-size: 2.2rem;
+  }
+  .header__contact-btn a {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header__small-title {
+    font-size: 3rem;
+  }
+  .header__title-first-text {
+    font-size: 5rem;
+  }
+  .header__title-sec-text {
+    font-size: 5rem;
+  }
+  .header__discription {
+    margin-top: 10px;
+    font-size: 2rem;
+    max-width: 70%;
+  }
+  .header__splash-img {
+    display: none;
+  }
+  .header__text {
+    top: 100px;
+    left: 140px;
+    width: 100%;
+  }
+  .header__title-sec-text::before {
+    height: 75px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1300px) {
+  .header__small-title {
+    font-size: 2.5rem;
+  }
+  .header__title-first-text {
+    font-size: 4rem;
+  }
+  .header__title-sec-text {
+    font-size: 4rem;
+  }
+  .header__discription {
+    font-size: 1.5rem;
+    max-width: 60%;
+  }
+  .header__splash-img {
+    top: 150px;
+    left: 600px;
+    width: 600px;
+    height: 600px;
+  }
+}
+@media (min-width: 1301px) and (max-width: 1400px) {
+  .header__splash-img {
+    top: 200px;
+    left: 600px;
+    width: 700px;
+    height: 700px;
+  }
+  .header__discription {
+    font-size: 2.5rem;
+    max-width: 70%;
+  }
+  .header__cv-btn {
+    font-size: 2.5rem;
+  }
+  .header__contact-btn a {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .header__splash-img {
+    top: 100px;
+    left: 1200px;
+    width: 700px;
+    height: 700px;
+  }
+}
 .nav {
   position: sticky;
   background-color: white;
