@@ -1,0 +1,63 @@
+.about-me {
+	width: 100%;
+	padding: 3%;
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		padding: 2%;
+        margin: 0 auto;
+		width: 100%;
+		background-color: $white;
+		border-radius: 20px;
+		box-shadow: $color-text 0px 5px 15px;
+	}
+	&__img {
+		width: 30%;
+		height: 40vh;
+	}
+	&__info {
+		width: 50%;
+		height: 40vh;
+	}
+	&__title-in-container {
+		margin-bottom: 10px;
+		font-size: 3rem;
+		font-family: $text-font;
+		color: $color-text;
+	}
+	&__text {
+		font-size: 1.8rem;
+		max-width: 70%;
+		font-family: $text-font;
+		color: $color-text;
+	}
+	&__contact-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 20px 0;
+		font-size: 2rem;
+		font-family: $text-font;
+
+		.fa-solid {
+			margin-right: 10px;
+			color: $main-color;
+		}
+	}
+	&__contact-phone {
+		margin: 10px 0;
+	}
+	&__my-interests-box {
+		display: inline-block;
+		margin-right: 20px;
+		font-size: 2rem;
+		font-family: $text-font;
+		.fa-solid {
+			margin-right: 5px;
+			color: $main-color;
+		}
+	}
+}

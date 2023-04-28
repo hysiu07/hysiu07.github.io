@@ -5,11 +5,27 @@
 }
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 body {
 	position: relative;
 	width: 100%;
 }
+h2 {
+	display: inline-block;
+	padding: 20px 0px;
+	font-size: 4rem;
+	font-family: $small-title-font;
+	color: $color-text;
+}
+.title-element {
+	display: inline-block;
+	width: 35px;
+	height: 5px;
+	border-radius: 40px;
+	background-color: $main-color;
+}
+
 .btn {
 	padding: 10px 20px;
 	font-size: 1.8em;

@@ -25,3 +25,20 @@ const showMenu = () => {
 };
 
 barsBtn.addEventListener('click', showMenu);
+
+const timeLine = document.querySelectorAll('.time-line-section__element');
+const test = () => {
+	
+	const scrollY = window.scrollY;
+	
+	if (scrollY >= 950) {
+		timeLine[0].style.transform = 'translateX(-220px)';
+	} else if (scrollY >= 1000) {
+		timeLine[1].style.transform = 'translateX(220px)';
+	} else if (scrollY >= 1100) {
+		timeLine[2].style.transform = 'translateX(-220px)'
+	}
+};
+console.log(timeLine[0]);
+console.log(timeLine[1]);
+window.addEventListener('scroll', test);
