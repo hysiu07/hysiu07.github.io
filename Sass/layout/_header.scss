@@ -322,9 +322,13 @@
 		&__title-sec-text {
 			font-size: 4rem;
 		}
+		&__title-sec-text::before {
+			height: 55px;
+		}
 		&__discription {
-			font-size: 1.5rem;
-			max-width: 60%;
+			margin-top: 10px;
+			font-size: 2rem;
+			max-width: 70%;
 		}
 		&__splash-img {
 			top: 150px;
@@ -356,11 +360,11 @@
 		}
 	}
 }
-@media (min-width: 1400px) {
+@media (min-width: 1400px) and (max-width:1600px){
 	.header {
 		&__splash-img {
 			top: 100px;
-			left: 1200px;
+			left: 900px;
 			width: 700px;
 			height: 700px;
 		}

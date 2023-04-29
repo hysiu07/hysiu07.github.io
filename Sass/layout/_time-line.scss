@@ -1,4 +1,5 @@
 .time-line-section {
+	position: relative;
 	width: 100%;
 	padding: 3%;
 	overflow: hidden;
@@ -125,25 +126,72 @@
 		margin-right: 20px;
 		color: $second-color;
 	}
-}
-@media (max-width: 576px) {
-	.time-line-section {
-		display: none;
+	&__square {
+		position: absolute;
+		top: 200px;
+		left: 50px;
+		width: 150px;
+		height: 150px;
+		border: 5px solid $main-color;
+		border-radius: 20px;
+		animation: time-line-square 10s linear infinite;
 	}
-}
-@media (min-width: 576px) and (max-width: 768px) {
-	.time-line-section {
-		&__element {
-			width: 250px;
-			p {
-				font-size: 2rem;
+	@keyframes time-line-square {
+		0% {
+			top: 200px;
+			left: 50px;
+			transform: rotate(0);
+		}
+		15% {
+			top: 380px;
+			left: 400px;
+		}
+		30% {
+			top: 700px;
+			left: 0;
+			transform: rotate(360deg);
+		}
+		45% {
+			top: 1100px;
+			left: 400px;
+		}
+		60% {
+			top: 1300px;
+			left: 0;
+		}
+		75% {
+			top: 1500px;
+			left: 370px;
+		}
+		90% {
+			top: 1000px;
+			left: 200px;
+		}
+		100% {
+			top: 200px;
+			left: 50px;
+			transform: rotate(0);
+		}
+	}
+	@media (max-width: 576px) {
+		.time-line-section {
+			display: none;
+		}
+	}
+	@media (min-width: 576px) and (max-width: 768px) {
+		.time-line-section {
+			&__element {
+				width: 250px;
+				p {
+					font-size: 2rem;
+				}
 			}
-		}
-		&__element:nth-child(odd)::after {
-			right: -106px;
-		}
-		&__element:nth-child(even)::after {
-			left: -106px;
+			&__element:nth-child(odd)::after {
+				right: -106px;
+			}
+			&__element:nth-child(even)::after {
+				left: -106px;
+			}
 		}
 	}
 }

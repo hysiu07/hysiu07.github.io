@@ -439,9 +439,13 @@ h2 {
   .header__title-sec-text {
     font-size: 4rem;
   }
+  .header__title-sec-text::before {
+    height: 55px;
+  }
   .header__discription {
-    font-size: 1.5rem;
-    max-width: 60%;
+    margin-top: 10px;
+    font-size: 2rem;
+    max-width: 70%;
   }
   .header__splash-img {
     top: 150px;
@@ -468,10 +472,10 @@ h2 {
     font-size: 2.5rem;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1400px) and (max-width: 1600px) {
   .header__splash-img {
     top: 100px;
-    left: 1200px;
+    left: 900px;
     width: 700px;
     height: 700px;
   }
@@ -595,8 +599,6 @@ h2 {
   margin: 0 auto;
   width: 100%;
   background-color: #fff;
-  border-radius: 20px;
-  box-shadow: #58545a 0px 5px 15px;
 }
 .about-me__img {
   width: 30%;
@@ -689,6 +691,7 @@ h2 {
   }
 }
 .time-line-section {
+  position: relative;
   width: 100%;
   padding: 3%;
   overflow: hidden;
@@ -799,23 +802,69 @@ h2 {
   margin-right: 20px;
   color: #3E0DD2;
 }
-
+.time-line-section__square {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #b95cdd;
+  border-radius: 20px;
+  animation: time-line-square 10s linear infinite;
+}
+@keyframes time-line-square {
+  0% {
+    top: 200px;
+    left: 50px;
+    transform: rotate(0);
+  }
+  15% {
+    top: 380px;
+    left: 400px;
+  }
+  30% {
+    top: 700px;
+    left: 0;
+    transform: rotate(360deg);
+  }
+  45% {
+    top: 1100px;
+    left: 400px;
+  }
+  60% {
+    top: 1300px;
+    left: 0;
+  }
+  75% {
+    top: 1500px;
+    left: 370px;
+  }
+  90% {
+    top: 1000px;
+    left: 200px;
+  }
+  100% {
+    top: 200px;
+    left: 50px;
+    transform: rotate(0);
+  }
+}
 @media (max-width: 576px) {
-  .time-line-section {
+  .time-line-section .time-line-section {
     display: none;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .time-line-section__element {
+  .time-line-section .time-line-section__element {
     width: 250px;
   }
-  .time-line-section__element p {
+  .time-line-section .time-line-section__element p {
     font-size: 2rem;
   }
-  .time-line-section__element:nth-child(odd)::after {
+  .time-line-section .time-line-section__element:nth-child(odd)::after {
     right: -106px;
   }
-  .time-line-section__element:nth-child(even)::after {
+  .time-line-section .time-line-section__element:nth-child(even)::after {
     left: -106px;
   }
 }/*# sourceMappingURL=style.css.map */
