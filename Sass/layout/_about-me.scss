@@ -8,7 +8,7 @@
 		justify-content: space-around;
 		align-items: center;
 		padding: 2%;
-        margin: 0 auto;
+		margin: 0 auto;
 		width: 100%;
 		background-color: $white;
 		border-radius: 20px;
@@ -16,11 +16,9 @@
 	}
 	&__img {
 		width: 30%;
-		height: 40vh;
 	}
 	&__info {
 		width: 50%;
-		height: 40vh;
 	}
 	&__title-in-container {
 		margin-bottom: 10px;
@@ -58,6 +56,54 @@
 		.fa-solid {
 			margin-right: 5px;
 			color: $main-color;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.about-me {
+		padding: 5%;
+		&__contact-container {
+			align-items: flex-start;
+			font-size: 1.8rem;
+		}
+		&__img {
+			width: 100%;
+		}
+		&__info {
+			text-align: center;
+			width: 100%;
+		}
+		&__text {
+			font-size: 1.6rem;
+			text-align: center;
+			margin: 0;
+			max-width: 100%;
+		}
+		&__my-interests-box {
+			font-size: 1.8rem;
+		}
+		&__title-in-container {
+			font-size: 2.5rem;
+		}
+	}
+}
+@media (min-width: 576px) and (max-width: 768px) {
+	.about-me {
+		&__img {
+			width: 100%;
+		}
+		&__info {
+			text-align: center;
+			width: 100%;
+		}
+		&__text {
+			font-size: 1.8rem;
+			text-align: center;
+			margin: 0;
+			max-width: 100%;
+		}
+		&__my-interests-box {
+			font-size: 1.8rem;
 		}
 	}
 }

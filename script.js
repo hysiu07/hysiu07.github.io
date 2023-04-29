@@ -28,15 +28,34 @@ barsBtn.addEventListener('click', showMenu);
 
 const timeLine = document.querySelectorAll('.time-line-section__element');
 const test = () => {
-	
 	const scrollY = window.scrollY;
-	
-	if (scrollY >= 950) {
+
+	if (scrollY >= 1000) {
 		timeLine[0].style.transform = 'translateX(-220px)';
-	} else if (scrollY >= 1000) {
+	}
+	if (scrollY >= 1300) {
 		timeLine[1].style.transform = 'translateX(220px)';
-	} else if (scrollY >= 1100) {
-		timeLine[2].style.transform = 'translateX(-220px)'
+	}
+	if (scrollY >= 1500) {
+		timeLine[2].style.transform = 'translateX(-220px)';
+	}
+	if (scrollY >= 1700) {
+		timeLine[3].style.transform = 'translateX(220px)';
+	}
+	if (scrollY >= 1900) {
+		timeLine[4].style.transform = 'translateX(-220px)';
+	}
+	if (scrollY >= 2100) {
+		timeLine[5].style.transform = 'translateX(220px)';
+	}
+	if (scrollY >= 2200) {
+		timeLine[6].style.transform = 'translateX(-220px)';
+	}
+	if (scrollY >= 2300) {
+		timeLine[7].style.transform = 'translateX(220px)';
+	}
+	if (scrollY >= 2400) {
+		timeLine[8].style.transform = 'translateX(-220px)';
 	}
 };
 console.log(timeLine[0]);

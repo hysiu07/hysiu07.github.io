@@ -1,6 +1,7 @@
 .time-line-section {
 	width: 100%;
 	padding: 3%;
+	overflow: hidden;
 	&__time-line {
 		display: flex;
 		justify-content: center;
@@ -11,20 +12,26 @@
 	&__elements {
 		display: flex;
 		flex-direction: column;
-        
 		list-style: none;
+	}
+	&__element-text-my-position {
+		margin-left: 10px;
+		font-size: 2.5rem;
+		font-family: $text-font;
+		color: $color-text;
+		animation: my-position-animation 1s infinite;
 	}
 	&__element {
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-        margin: 50px 0;
+		margin: 50px 0;
 		padding: 20px 40px;
 		width: 400px;
 		border: 1px solid $main-color;
 		border-radius: 20px;
-        transition: all .5s;
+		transition: all 0.5s;
 		p {
 			font-size: 2rem;
 		}
@@ -40,17 +47,18 @@
 	}
 	&__element:nth-child(even) {
 		align-self: flex-end;
-		transform: translateX(400px);
+		transform: translateX(1400px);
 	}
 	&__element:nth-child(even)::after {
 		left: -31px;
 	}
 	&__element:nth-child(odd) {
-		transform: translateX(-400px);
+		transform: translateX(-1400px);
 	}
 	&__element:nth-child(odd)::after {
 		right: -31px;
 	}
+
 	&__element:nth-child(7) {
 		border: 1px solid $second-color;
 	}
@@ -62,6 +70,12 @@
 	}
 	&__element:nth-child(8)::after {
 		background-color: $second-color;
+	}
+	&__element:nth-child(9)::after {
+		background-color: $second-color;
+	}
+	&__element:nth-child(9) {
+		border: 1px solid $second-color;
 	}
 
 	&__elements::before {
@@ -76,15 +90,15 @@
 		background-image: linear-gradient(
 			180deg,
 			hsl(283deg 65% 61%) 0%,
-			hsl(280deg 68% 60%) 47%,
-			hsl(278deg 70% 58%) 60%,
-			hsl(275deg 72% 56%) 69%,
-			hsl(272deg 74% 54%) 74%,
-			hsl(269deg 77% 53%) 79%,
-			hsl(266deg 79% 51%) 84%,
-			hsl(264deg 82% 49%) 88%,
-			hsl(261deg 83% 47%) 92%,
-			hsl(258deg 86% 45%) 96%,
+			hsl(280deg 68% 60%) 35%,
+			hsl(278deg 70% 58%) 47%,
+			hsl(275deg 72% 56%) 55%,
+			hsl(272deg 74% 54%) 61%,
+			hsl(269deg 77% 53%) 66%,
+			hsl(266deg 79% 51%) 72%,
+			hsl(264deg 82% 49%) 77%,
+			hsl(261deg 83% 47%) 84%,
+			hsl(258deg 86% 45%) 91%,
 			hsl(255deg 88% 44%) 100%
 		);
 	}
@@ -98,7 +112,8 @@
 		font-family: $text-font;
 		color: $color-text;
 	}
-	&__redux-icon {
+	&__redux-icon,
+	&__type-script-icon {
 		width: 30px;
 		height: 30px;
 		margin-right: 20px;
@@ -109,5 +124,26 @@
 		font-size: 3rem;
 		margin-right: 20px;
 		color: $second-color;
+	}
+}
+@media (max-width: 576px) {
+	.time-line-section {
+		display: none;
+	}
+}
+@media (min-width: 576px) and (max-width: 768px) {
+	.time-line-section {
+		&__element {
+			width: 250px;
+			p {
+				font-size: 2rem;
+			}
+		}
+		&__element:nth-child(odd)::after {
+			right: -106px;
+		}
+		&__element:nth-child(even)::after {
+			left: -106px;
+		}
 	}
 }
