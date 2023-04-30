@@ -113,8 +113,8 @@
 	&__splash-img {
 		position: absolute;
 		z-index: 200;
-		top: 100px;
-		left: 1000px;
+		top: 80px;
+		right: 50px;
 		width: 700px;
 		height: 700px;
 		filter: invert(51%) sepia(53%) saturate(3349%) hue-rotate(245deg)
@@ -124,12 +124,13 @@
 	&__scroll-icon {
 		position: absolute;
 		z-index: 300;
-		bottom: 20px;
+		bottom: 10px;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 70px;
 		height: 70px;
-		filter: invert(35%) sepia(4%) saturate(754%) hue-rotate(236deg) brightness(85%) contrast(82%);
+		filter: invert(35%) sepia(4%) saturate(754%) hue-rotate(236deg)
+			brightness(85%) contrast(82%);
 	}
 	// &__square {
 	// 	position: absolute;
@@ -197,6 +198,9 @@
 			width: 55px;
 			height: 55px;
 		}
+		&__splash-img {
+			display: none;
+		}
 	}
 }
 @media (min-width: 365px) and (max-width: 576px) {
@@ -241,6 +245,9 @@
 			width: 60px;
 			height: 60px;
 		}
+		&__splash-img {
+			display: none;
+		}
 	}
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -281,7 +288,7 @@
 		}
 	}
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 996px) {
 	.header {
 		&__small-title {
 			font-size: 3rem;
@@ -303,7 +310,7 @@
 
 		&__text {
 			top: 100px;
-			left: 140px;
+			left: 120px;
 			width: 100%;
 		}
 		&__title-sec-text::before {
@@ -311,8 +318,11 @@
 		}
 	}
 }
-@media (min-width: 1025px) and (max-width: 1300px) {
+@media (min-width: 996px) and (max-width: 1300px) {
 	.header {
+		&__text {
+			width: 80%;
+		}
 		&__small-title {
 			font-size: 2.5rem;
 		}
@@ -330,22 +340,28 @@
 			font-size: 2rem;
 			max-width: 70%;
 		}
+		// &__splash-img {
+		// 	top: 150px;
+		// 	left: 350px;
+		// 	width: 600px;
+		// 	height: 600px;
+		// }
 		&__splash-img {
-			top: 150px;
-			left: 600px;
+			top: 200px;
 			width: 600px;
 			height: 600px;
 		}
 	}
 }
+
 @media (min-width: 1301px) and (max-width: 1400px) {
 	.header {
-		&__splash-img {
-			top: 200px;
-			left: 600px;
-			width: 700px;
-			height: 700px;
-		}
+		// &__splash-img {
+		// 	top: 100px;
+		// 	left: 600px;
+		// 	width: 700px;
+		// 	height: 700px;
+		// }
 		&__discription {
 			font-size: 2.5rem;
 			max-width: 70%;
@@ -360,13 +376,13 @@
 		}
 	}
 }
-@media (min-width: 1400px) and (max-width:1600px){
-	.header {
-		&__splash-img {
-			top: 100px;
-			left: 900px;
-			width: 700px;
-			height: 700px;
-		}
-	}
+@media (min-width: 1400px) and (max-width: 1600px) {
+	// .header {
+	// 	// &__splash-img {
+	// 	// 	top: 100px;
+	// 	// 	left: 700px;
+	// 	// 	width: 700px;
+	// 	// 	height: 700px;
+	// 	// }
+	// }
 }
