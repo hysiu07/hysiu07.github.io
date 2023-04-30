@@ -32,12 +32,38 @@
 		padding: 20px 40px;
 		width: 400px;
 		border: 1px solid $main-color;
-		border-radius: 20px;
+		border-radius: 15px;
 		background-color: white;
 		transition: all 0.5s;
 		p {
 			font-size: 2rem;
 		}
+	}
+	&__more-info {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 3px 7px;
+		border: 1.5px solid black;
+		border-radius: 50%;
+		cursor: pointer;
+		.fa-info {
+			font-size: 10px;
+		}
+	}
+	&__more-info-container {
+		position: absolute;
+		z-index: 500;
+		bottom: 50px;
+		right: -10px;
+		width: 300px;
+		padding: 10px;
+		border: 1px solid black;
+		background-color: white;
+		opacity: 0;
+	}
+	&__more-info:hover &__more-info-container{
+		opacity: 1;
 	}
 	&__element::after {
 		content: '';
@@ -137,49 +163,11 @@
 		height: 150px;
 		border: 5px solid $main-color;
 		border-radius: 20px;
-		animation: time-line-square 10s linear infinite;
+		animation: time-line-square 30s linear infinite;
 	}
-	@keyframes time-line-square {
-		0% {
-			top: 200px;
-			left: 50px;
-			transform: rotate(0);
-		}
-		15% {
-			top: 380px;
-			left: 50%;
-		}
-		30% {
-			top: 700px;
-			left: 100%;
-			transform: rotate(360deg);
-		}
-		45% {
-			top: 1100px;
-			left: 50%;
-		}
-		60% {
-			top: 1300px;
-			left: 0;
-		}
-		75% {
-			top: 1500px;
-			left: 50%;
-		}
-		90% {
-			top: 1000px;
-			left: 0;
-		}
-		100% {
-			top: 200px;
-			left: 50px;
-			transform: rotate(0);
-		}
-	}
-
 }
 @media (max-width: 996px) {
-	.time-line-section{
+	.time-line-section {
 		display: none;
 	}
 }

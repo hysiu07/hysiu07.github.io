@@ -150,15 +150,52 @@
 	}
 }
 
-@keyframes my-position-animation{
-	0%{
+@keyframes my-position-animation {
+	0% {
 		opacity: 1;
 	}
-	50%{
+	50% {
 		opacity: 0;
 	}
-	100%{
+	100% {
 		opacity: 1;
 	}
-	
+}
+// ---animation-time-line-square---
+@keyframes time-line-square {
+	0% {
+		top: 200px;
+		left: 50px;
+		transform: rotate(0);
+	}
+	15% {
+		top: 380px;
+		left: 50%;
+	}
+	30% {
+		top: 700px;
+		left: 100%;
+		transform: rotate(360deg);
+	}
+	45% {
+		top: 1100px;
+		left: 50%;
+	}
+	60% {
+		top: 1300px;
+		left: 0;
+	}
+	75% {
+		top: 1500px;
+		left: 50%;
+	}
+	90% {
+		top: 1000px;
+		left: 0;
+	}
+	100% {
+		top: 200px;
+		left: 50px;
+		transform: rotate(0);
+	}
 }
