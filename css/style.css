@@ -575,6 +575,7 @@ h2 {
 }
 .nav .nav-container__social-icons .fa-brands {
   margin: 0 10px;
+  color: #58545a;
 }
 .nav .nav-container .show-menu {
   right: 0;
@@ -1120,4 +1121,55 @@ h2 {
 .footer__social-icons .fa-brands {
   color: #fff;
   margin: 10px;
+}
+
+.simple-projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5%;
+  width: 100%;
+}
+.simple-projects__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3%;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  overflow: hidden;
+}
+.simple-projects__info-container {
+  padding: 3%;
+  text-align: center;
+}
+.simple-projects__img {
+  width: 100%;
+  height: 50%;
+}
+.simple-projects__text {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  font-family: "Kumbh Sans", "sans-serif";
+  color: #58545a;
+}
+.simple-projects__link-github .fa-github {
+  margin: 20px 0;
+  font-size: 4rem;
+  color: #58545a;
+}
+.simple-projects__btn {
+  border: 2px solid #58545a;
+}
+.simple-projects__btn:hover {
+  background-color: #58545a;
+}
+.simple-projects__link-btn {
+  text-decoration: none;
+  color: #58545a;
 }/*# sourceMappingURL=style.css.map */
