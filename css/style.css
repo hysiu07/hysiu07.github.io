@@ -1119,18 +1119,19 @@ h2 {
   color: #fff;
 }
 .footer__social-icons .fa-brands {
+  font-size: 3rem;
   color: #fff;
   margin: 10px;
 }
 
-.simple-projects {
+.projects {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 5%;
   width: 100%;
 }
-.simple-projects__card {
+.projects__card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1144,32 +1145,37 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   overflow: hidden;
 }
-.simple-projects__info-container {
+.projects__info-container {
   padding: 3%;
   text-align: center;
 }
-.simple-projects__img {
+.projects__img {
   width: 100%;
   height: 50%;
+  background-size: cover;
+  background-position: center;
 }
-.simple-projects__text {
+.projects__img-holidays {
+  background-image: url("/websites-projects/projects/website-holidays/website-holidays.jpg");
+}
+.projects__text {
   margin-top: 10px;
   font-size: 1.6rem;
   font-family: "Kumbh Sans", "sans-serif";
   color: #58545a;
 }
-.simple-projects__link-github .fa-github {
+.projects__link-github .fa-github {
   margin: 20px 0;
   font-size: 4rem;
   color: #58545a;
 }
-.simple-projects__btn {
+.projects__btn {
   border: 2px solid #58545a;
 }
-.simple-projects__btn:hover {
+.projects__btn:hover {
   background-color: #58545a;
 }
-.simple-projects__link-btn {
+.projects__link-btn {
   text-decoration: none;
   color: #58545a;
 }/*# sourceMappingURL=style.css.map */

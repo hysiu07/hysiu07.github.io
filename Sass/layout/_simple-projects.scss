@@ -1,4 +1,4 @@
-.simple-projects {
+.projects {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -26,8 +26,14 @@
 		text-align: center;
 	}
 	&__img {
+		
 		width: 100%;
 		height: 50%;
+		background-size: cover;
+		background-position: center;
+	}
+	&__img-holidays{
+		background-image: url('/websites-projects/projects/website-holidays/website-holidays.jpg');
 	}
 	&__text {
 		margin-top: 10px;
@@ -44,12 +50,11 @@
 	}
 	&__btn {
 		border: 2px solid $color-text;
-		
 	}
 	&__btn:hover {
 		background-color: $color-text;
 	}
-	&__link-btn{
+	&__link-btn {
 		text-decoration: none;
 		color: $color-text;
 	}
