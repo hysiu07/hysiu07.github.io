@@ -377,9 +377,7 @@ h2 {
     display: none;
   }
   .header__scroll-icon {
-    bottom: 1px;
-    width: 55px;
-    height: 55px;
+    display: none;
   }
   .header__splash-img {
     display: none;
@@ -397,7 +395,7 @@ h2 {
   }
   .header__discription {
     margin-top: 10px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     max-width: 100%;
   }
   .header__text {
@@ -419,9 +417,7 @@ h2 {
     display: none;
   }
   .header__scroll-icon {
-    bottom: 1px;
-    width: 60px;
-    height: 60px;
+    display: none;
   }
   .header__splash-img {
     display: none;
