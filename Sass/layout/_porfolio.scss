@@ -2,6 +2,9 @@
 	position: relative;
 	width: 100%;
 	padding: 3%;
+	&__title-element{
+		background-color: $second-color;
+	}
 
 	&__cards {
 		display: flex;
@@ -26,20 +29,20 @@
 		transition: all 0.5s;
 		overflow: hidden;
 		.fa-brands {
-			font-size: 8rem;
+			font-size: 6rem;
 			color: $color-text;
 		}
 	}
-	&__card:hover {
-		transform: scale(1.1);
-	}
+	// &__card:hover {
+	// 	transform: scale(1.1);
+	// }
 
 	&__card:nth-child(2) {
 		height: 500px;
 		width: 300px;
 
 		.fa-brands {
-			font-size: 15rem;
+			font-size: 12rem;
 			animation: animate-portfolio-react-icon 10s linear infinite;
 		}
 	}
@@ -53,13 +56,13 @@
 		height: 100%;
 		bottom: -100%;
 		text-decoration: none;
-		background-color: $main-color;
+		background-color: $second-color;
 		opacity: 0.9;
 		transition: all 0.3s;
 		p {
 			color: $white;
 			font-family: $text-font;
-			font-size: 2.5rem;
+			font-size: 2rem;
 		}
 	}
 	&__card:hover &__card-link {
@@ -73,18 +76,10 @@
 		transform: translate(-50%, -50%);
 		height: 900px;
 		width: 900px;
-		filter: invert(51%) sepia(53%) saturate(3349%) hue-rotate(245deg)
-			brightness(90%) contrast(91%);
+		filter: invert(18%) sepia(99%) saturate(3237%) hue-rotate(252deg) brightness(75%) contrast(130%);
 	}
 }
-@keyframes animate-portfolio-react-icon {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
+
 
 @media (max-width: 996px) {
 	.portfolio {

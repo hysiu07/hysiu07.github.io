@@ -39,7 +39,7 @@
             </div>
         </div>
     </nav>
-    <header class="header wrapper">
+    <header class="header wrapper" id="home">
         <div class="header__circle-img-big"></div>
         <div class="header__circle-img-small"></div>
         <img class="header__splash-img" src="./Img/splash.svg" alt="purple-splash">
@@ -51,9 +51,9 @@
                 <span class="header__title-first-text">I'm</span>
                 <span class="header__title-sec-text">Frontend developer</span>
             </div>
-            <p class="header__discription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto commodi
-                soluta itaque optio
-                doloremque recusandae minima hic sint nostrum praesentium.</p>
+            <p class="header__discription">Frontend developer is a type of software developer who focuses on creating the user-facing portion of web applications
+            or software. We are responsible for building the parts of a website or application that users see and interact with
+            directly, such as the layout, visual design, and functionality.</p>
             <button class="header__cv-btn btn">Download CV</button>
             <button class="header__contact-btn btn"><a href="#contact">Contact with me</a></button>
         </div>
@@ -215,7 +215,7 @@
         <section class="portfolio" id="portfolio">
             <img src="./Img/splash.svg" alt="splash" class="portfolio__splash-img">
             <h2 class="porfolio__title titles">Portfolio</h2>
-            <span class="title-element"></span>
+            <span class="portfolio__title-element title-element"></span>
             <div class="portfolio__cards">
                 <div class="portfolio__card">
                     <i class="fa-brands fa-sass"></i>
@@ -244,8 +244,62 @@
                 </div>
             </div>
         </section>
-    </main>
+        <section class="contact" id="contact">
+            <h2 class="contact__title titles">Contact</h2>
+            <span class="contact__small-title-element title-element"></span>
+            <div class="contact__container">
 
+                <form action="">
+                    <input type="text" name="text" placeholder="Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit" class="contact__btn-send-message">Send Message</button>
+                </form>
+                <div class="contact__info-box">
+                    <div class="contact__telephone">
+                        <div class="contact__icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact__number-box">
+                            <p class="contact__number-title">Call Me</p>
+                            <p class="contact__number-text">46 24 6303</p>
+                        </div>
+                    </div>
+                    <div class="contact__email">
+                        <div class="contact__icon-box">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact__email-box">
+                            <p class="contact__email-title">E-mail</p>
+                            <p class="contact__email-text">hysiu07@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact__location">
+                        <div class="contact__icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact__location-box">
+                            <p class="contact__location-title">Location</p>
+                            <p class="contact__location-text">Stavanger/Rogaland</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer__shadow"></div>
+        <div class="footer__logo">
+            <i class="fa-solid fa-code"></i>
+            <span class="footer__logo-text">FOLIO</span>
+            <div class="footer__logo-dot"></div>
+        </div>
+        <div class="footer__social-icons">
+            <a href="https://github.com/hysiu07" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+    </footer>
     <script src="./script.js"></script>
 
 

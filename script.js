@@ -33,28 +33,28 @@ const test = () => {
 	if (scrollY >= 1000) {
 		timeLine[0].style.transform = 'translateX(-220px)';
 	}
-	if (scrollY >= 1250) {
+	if (scrollY >= 1150) {
 		timeLine[1].style.transform = 'translateX(220px)';
 	}
-	if (scrollY >= 1400) {
+	if (scrollY >= 1250) {
 		timeLine[2].style.transform = 'translateX(-220px)';
 	}
-	if (scrollY >= 1600) {
+	if (scrollY >= 1400) {
 		timeLine[3].style.transform = 'translateX(220px)';
 	}
-	if (scrollY >= 1800) {
+	if (scrollY >= 1550) {
 		timeLine[4].style.transform = 'translateX(-220px)';
 	}
-	if (scrollY >= 2000) {
+	if (scrollY >= 1700) {
 		timeLine[5].style.transform = 'translateX(220px)';
 	}
-	if (scrollY >= 2100) {
+	if (scrollY >= 1850) {
 		timeLine[6].style.transform = 'translateX(-220px)';
 	}
-	if (scrollY >= 2200) {
+	if (scrollY >= 1900) {
 		timeLine[7].style.transform = 'translateX(220px)';
 	}
-	if (scrollY >= 2300) {
+	if (scrollY >= 2000) {
 		timeLine[8].style.transform = 'translateX(-220px)';
 	}
 };

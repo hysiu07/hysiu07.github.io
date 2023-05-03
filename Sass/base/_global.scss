@@ -6,6 +6,7 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	scroll-padding-top: 80px;
 }
 body {
 	position: relative;
@@ -43,5 +44,10 @@ h2 {
 	background-color: $main-color;
 	a {
 		color: white;
+	}
+}
+@media (max-width: 576px) {
+	h2 {
+		font-size: 3rem;
 	}
 }
