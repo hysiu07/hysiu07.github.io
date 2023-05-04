@@ -645,6 +645,7 @@ h2 {
 }
 .about-me__img {
   width: 30%;
+  height: 100%;
 }
 .about-me__info {
   width: 50%;
@@ -916,14 +917,15 @@ h2 {
   height: 400px;
   margin: 20px;
   border-radius: 20px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: linear-gradient(40deg, hsl(283, 65%, 61%) 0%, hsl(280, 68%, 60%) 15%, hsl(278, 70%, 58%) 27%, hsl(275, 72%, 56%) 37%, hsl(272, 74%, 54%) 45%, hsl(269, 77%, 53%) 53%, hsl(266, 79%, 51%) 61%, hsl(264, 82%, 49%) 70%, hsl(261, 83%, 47%) 79%, hsl(258, 86%, 45%) 89%, hsl(255, 88%, 44%) 100%);
+  box-shadow: rgb(38, 57, 77) 0px 20px 50px -10px;
   transition: all 0.5s;
   overflow: hidden;
 }
 .portfolio__card .fa-brands {
   font-size: 6rem;
-  color: #58545a;
+  margin: 10px;
+  color: #fff;
 }
 .portfolio__card:nth-child(2) {
   height: 500px;
@@ -943,12 +945,11 @@ h2 {
   height: 100%;
   bottom: -100%;
   text-decoration: none;
-  background-color: #3E0DD2;
-  opacity: 0.9;
+  background-color: #fff;
   transition: all 0.3s;
 }
 .portfolio__card-link p {
-  color: #fff;
+  color: #58545a;
   font-family: "Kumbh Sans", "sans-serif";
   font-size: 2rem;
 }
@@ -1000,7 +1001,9 @@ h2 {
 }
 .contact form input,
 .contact form textarea {
-  width: 80%;
+  width: 70%;
+  max-width: 70%;
+  min-width: 70%;
   padding: 10px 20px;
   margin: 15px;
   font-size: 2rem;
@@ -1156,7 +1159,12 @@ h2 {
   background-position: center;
 }
 .projects__img-holidays {
-  background-image: url("/websites-projects/projects/website-holidays/website-holidays.jpg");
+  background-image: url("/websites-projects/img-web-sites/website-holidays.jpg");
+}
+.projects__img-spa {
+  background-image: url("/websites-projects/img-web-sites/spa.jpg");
+  background-position-x: right;
+  background-position-y: top;
 }
 .projects__text {
   margin-top: 10px;

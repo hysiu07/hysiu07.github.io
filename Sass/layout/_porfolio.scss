@@ -2,7 +2,7 @@
 	position: relative;
 	width: 100%;
 	padding: 3%;
-	&__title-element{
+	&__title-element {
 		background-color: $second-color;
 	}
 
@@ -24,13 +24,27 @@
 		height: 400px;
 		margin: 20px;
 		border-radius: 20px;
-		background-color: white;
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		background-image: linear-gradient(
+			40deg,
+			hsl(283deg 65% 61%) 0%,
+			hsl(280deg 68% 60%) 15%,
+			hsl(278deg 70% 58%) 27%,
+			hsl(275deg 72% 56%) 37%,
+			hsl(272deg 74% 54%) 45%,
+			hsl(269deg 77% 53%) 53%,
+			hsl(266deg 79% 51%) 61%,
+			hsl(264deg 82% 49%) 70%,
+			hsl(261deg 83% 47%) 79%,
+			hsl(258deg 86% 45%) 89%,
+			hsl(255deg 88% 44%) 100%
+		);
+		box-shadow: rgb(38, 57, 77) 0px 20px 50px -10px;
 		transition: all 0.5s;
 		overflow: hidden;
 		.fa-brands {
 			font-size: 6rem;
-			color: $color-text;
+			margin: 10px;
+			color: $white;
 		}
 	}
 	// &__card:hover {
@@ -56,11 +70,13 @@
 		height: 100%;
 		bottom: -100%;
 		text-decoration: none;
-		background-color: $second-color;
-		opacity: 0.9;
+		// background-color: $second-color;
+		
+		background-color: $white;
+		// opacity: 0.9;
 		transition: all 0.3s;
 		p {
-			color: $white;
+			color: $color-text;
 			font-family: $text-font;
 			font-size: 2rem;
 		}
@@ -76,10 +92,10 @@
 		transform: translate(-50%, -50%);
 		height: 900px;
 		width: 900px;
-		filter: invert(18%) sepia(99%) saturate(3237%) hue-rotate(252deg) brightness(75%) contrast(130%);
+		filter: invert(18%) sepia(99%) saturate(3237%) hue-rotate(252deg)
+			brightness(75%) contrast(130%);
 	}
 }
-
 
 @media (max-width: 996px) {
 	.portfolio {

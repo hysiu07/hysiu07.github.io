@@ -33,7 +33,12 @@
 		background-position: center;
 	}
 	&__img-holidays{
-		background-image: url('/websites-projects/projects/website-holidays/website-holidays.jpg');
+		background-image: url('/websites-projects/img-web-sites/website-holidays.jpg');
+	}
+	&__img-spa{
+		background-image: url('/websites-projects/img-web-sites/spa.jpg');
+		background-position-x: right;
+		background-position-y: top;
 	}
 	&__text {
 		margin-top: 10px;
