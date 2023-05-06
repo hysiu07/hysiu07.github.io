@@ -56,10 +56,15 @@
 	}
 	&__cv-btn {
 		margin: 20px 20px 0 0;
+		a {
+			text-decoration: none;
+			color: $color-text;
+		}
 	}
 	&__contact-btn {
 		a {
 			text-decoration: none;
+			color: $color-text;
 		}
 	}
 

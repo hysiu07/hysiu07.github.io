@@ -4,10 +4,12 @@ const barsBtn = document.querySelector('.nav-container__bars-btn');
 const menu = document.querySelector('.nav-container__links');
 const navLinks = document.querySelectorAll('.nav-container__links li');
 
+
 const showMenu = () => {
 	const delay = 0.6;
 
 	menu.classList.toggle('show-menu');
+
 	if (menu.classList.contains('show-menu')) {
 		barsBtn.style.borderColor = 'white';
 		barsBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
@@ -24,10 +26,26 @@ const showMenu = () => {
 	}
 };
 
+const hiddenMenu = () => {
+	if (menu.classList.contains('show-menu')) {
+		menu.classList.remove('show-menu');
+		barsBtn.style.borderColor = '#b95cdd';
+		barsBtn.innerHTML =
+			' <div class="first-bar bar"></div><div class="second-bar bar"></div><div class="third-bar bar"></div>';
+	}
+};
+
 barsBtn.addEventListener('click', showMenu);
+navLinks.forEach((link) => {
+	link.addEventListener('click', hiddenMenu);
+});
+
+
+// ----animation-time-line----
 
 const timeLine = document.querySelectorAll('.time-line-section__element');
-const test = () => {
+
+const animationTimeLine = () => {
 	const scrollY = window.scrollY;
 
 	if (scrollY >= 1000) {
@@ -58,6 +76,5 @@ const test = () => {
 		timeLine[8].style.transform = 'translateX(-220px)';
 	}
 };
-console.log(timeLine[0]);
-console.log(timeLine[1]);
-window.addEventListener('scroll', test);
+
+window.addEventListener('scroll', animationTimeLine);

@@ -70,15 +70,14 @@
 		height: 100%;
 		bottom: -100%;
 		text-decoration: none;
-		// background-color: $second-color;
-		
-		background-color: $white;
-		// opacity: 0.9;
+		background-color: rgba($color: $second-color, $alpha: .9);
 		transition: all 0.3s;
 		p {
-			color: $color-text;
+			color: $white;
 			font-family: $text-font;
-			font-size: 2rem;
+			font-size: 2.5rem;
+			font-weight: bold;
+			text-shadow: 2px 2px 2px black;
 		}
 	}
 	&__card:hover &__card-link {
