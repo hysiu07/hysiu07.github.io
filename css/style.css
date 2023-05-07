@@ -1153,6 +1153,10 @@ h2 {
 .projects__img-social-app {
   background-image: url("/portfolio-react/img-portfolio-react/social-app-img.jpg");
 }
+.projects__img-folio {
+  background-image: url("/websites-projects/img-web-sites/folio.jpg");
+  background-position: left;
+}
 .projects__text {
   margin-top: 10px;
   font-size: 1.6rem;
