@@ -1203,6 +1203,7 @@ h2 {
 }
 .projects__img-travel-agency {
   background-image: url("../../portfolio-react/img-portfolio-react/travel-agency.jpg");
+  background-position: left;
 }
 .projects__text {
   margin-top: 10px;
