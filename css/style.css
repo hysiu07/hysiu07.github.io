@@ -821,6 +821,18 @@ h2 {
 .time-line-section__element:nth-child(9) {
   border: 1px solid #3E0DD2;
 }
+.time-line-section__element:nth-child(10)::after {
+  background-color: #3E0DD2;
+}
+.time-line-section__element:nth-child(10) {
+  border: 1px solid #3E0DD2;
+}
+.time-line-section__element:nth-child(11)::after {
+  background-color: #3E0DD2;
+}
+.time-line-section__element:nth-child(11) {
+  border: 1px solid #3E0DD2;
+}
 .time-line-section__elements::before {
   content: "";
   position: absolute;

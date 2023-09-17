@@ -4,7 +4,6 @@ const barsBtn = document.querySelector('.nav-container__bars-btn');
 const menu = document.querySelector('.nav-container__links');
 const navLinks = document.querySelectorAll('.nav-container__links li');
 
-
 const showMenu = () => {
 	const delay = 0.6;
 
@@ -40,7 +39,6 @@ navLinks.forEach((link) => {
 	link.addEventListener('click', hiddenMenu);
 });
 
-
 // ----animation-time-line----
 
 const timeLine = document.querySelectorAll('.time-line-section__element');
@@ -74,6 +72,12 @@ const animationTimeLine = () => {
 	}
 	if (scrollY >= 2000) {
 		timeLine[8].style.transform = 'translateX(-220px)';
+	}
+	if (scrollY >= 2100) {
+		timeLine[9].style.transform = 'translateX(220px)';
+	}
+	if (scrollY >= 21000) {
+		timeLine[10].style.transform = 'translateX(-220px)';
 	}
 };
 

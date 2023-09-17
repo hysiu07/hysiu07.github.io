@@ -106,6 +106,18 @@
 	&__element:nth-child(9) {
 		border: 1px solid $second-color;
 	}
+	&__element:nth-child(10)::after {
+		background-color: $second-color;
+	}
+	&__element:nth-child(10) {
+		border: 1px solid $second-color;
+	}
+	&__element:nth-child(11)::after {
+		background-color: $second-color;
+	}
+	&__element:nth-child(11) {
+		border: 1px solid $second-color;
+	}
 
 	&__elements::before {
 		content: '';
