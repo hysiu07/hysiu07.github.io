@@ -900,11 +900,11 @@ h2 {
 .portfolio__card {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   z-index: 300;
-  width: 250px;
+  width: 800px;
   height: 400px;
   margin: 20px;
   border-radius: 20px;
@@ -914,16 +914,23 @@ h2 {
   overflow: hidden;
 }
 .portfolio__card .fa-brands {
-  font-size: 6rem;
+  font-size: 10rem;
   margin: 10px;
   color: #fff;
+  color: #ffffff;
+}
+.portfolio__card .type-script-icon {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+  filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(331deg) brightness(106%) contrast(105%);
 }
 .portfolio__card:nth-child(2) {
   height: 500px;
   width: 300px;
 }
 .portfolio__card:nth-child(2) .fa-brands {
-  font-size: 12rem;
+  font-size: 10rem;
   animation: animate-portfolio-react-icon 10s linear infinite;
 }
 .portfolio__card-link {
@@ -1152,10 +1159,10 @@ h2 {
   background-position: center;
 }
 .projects__img-holidays {
-  background-image: url("/websites-projects/img-web-sites/website-holidays.jpg");
+  background-image: url("../../portfolio-react/img-portfolio-react/website-holidays.jpg");
 }
 .projects__img-spa {
-  background-image: url("/websites-projects/img-web-sites/spa.jpg");
+  background-image: url("../../portfolio-react/img-portfolio-react/spa.jpg");
   background-position-x: right;
   background-position-y: top;
 }
@@ -1166,11 +1173,11 @@ h2 {
   background-image: url("/portfolio-react/img-portfolio-react/social-app-img.jpg");
 }
 .projects__img-folio {
-  background-image: url("/websites-projects/img-web-sites/folio.jpg");
+  background-image: url("../../portfolio-react/img-portfolio-react/folio.jpg");
   background-position: left;
 }
 .projects__img-pro-gamers {
-  background-image: url("/websites-projects/img-web-sites/pro-gamers.jpg");
+  background-image: url("../../portfolio-react/img-portfolio-react/pro-gamers.jpg");
 }
 .projects__text {
   margin-top: 10px;
