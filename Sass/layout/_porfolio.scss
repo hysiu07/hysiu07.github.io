@@ -8,8 +8,7 @@
 
 	&__cards {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-items: center;
 		width: 100%;
 	}
@@ -17,6 +16,7 @@
 		position: relative;
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 		z-index: 300;
@@ -51,12 +51,10 @@
 			width: 90px;
 			height: 90px;
 			margin-right: 20px;
-			filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(331deg) brightness(106%) contrast(105%);
+			filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(331deg)
+				brightness(106%) contrast(105%);
 		}
 	}
-	// &__card:hover {
-	// 	transform: scale(1.1);
-	// }
 
 	&__card:nth-child(2) {
 		height: 500px;
@@ -109,6 +107,23 @@
 		&__card:nth-child(2) {
 			width: 250px;
 			height: 400px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.portfolio {
+		.fa-brands {
+			font-size: 7rem;
+			margin: 10px;
+			color: $white;
+			color: #ffffff;
+		}
+		.type-script-icon {
+			width: 65px;
+			height: 65px;
+			margin-right: 20px;
+			filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(331deg)
+				brightness(106%) contrast(105%);
 		}
 	}
 }

@@ -5,13 +5,14 @@
 	flex-wrap: wrap;
 	padding: 5%;
 	width: 100%;
-	.type-script-icon{
+	.type-script-icon {
 		width: 27px;
 		height: 27px;
 	}
 	&__technologies {
-		i{
+		i {
 			font-size: 3rem;
+			margin: 5px;
 		}
 	}
 	&__card {
@@ -19,7 +20,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-		padding-bottom: 3%;
+		padding-bottom: 20px;
 		margin: 50px;
 		width: 300px;
 		height: 500px;
@@ -31,12 +32,12 @@
 		overflow: hidden;
 	}
 	&__info-container {
-		padding: 3%;
+		padding: 4%;
 		text-align: center;
 	}
 	&__img {
 		width: 100%;
-		height: 50%;
+		height: 60%;
 		background-size: cover;
 		background-position: center;
 	}
@@ -86,5 +87,13 @@
 	&__link-btn {
 		text-decoration: none;
 		color: $color-text;
+	}
+}
+
+@media (max-width: 576px) {
+	.projects {
+		&__card {
+			margin: 20px;
+		}
 	}
 }

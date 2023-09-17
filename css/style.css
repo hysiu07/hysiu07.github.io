@@ -892,8 +892,7 @@ h2 {
 }
 .portfolio__cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -901,6 +900,7 @@ h2 {
   position: relative;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   z-index: 300;
@@ -974,6 +974,20 @@ h2 {
   .portfolio__card:nth-child(2) {
     width: 250px;
     height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio .fa-brands {
+    font-size: 7rem;
+    margin: 10px;
+    color: #fff;
+    color: #ffffff;
+  }
+  .portfolio .type-script-icon {
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(331deg) brightness(106%) contrast(105%);
   }
 }
 .contact {
@@ -1140,13 +1154,14 @@ h2 {
 }
 .projects__technologies i {
   font-size: 3rem;
+  margin: 5px;
 }
 .projects__card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 3%;
+  padding-bottom: 20px;
   margin: 50px;
   width: 300px;
   height: 500px;
@@ -1156,12 +1171,12 @@ h2 {
   overflow: hidden;
 }
 .projects__info-container {
-  padding: 3%;
+  padding: 4%;
   text-align: center;
 }
 .projects__img {
   width: 100%;
-  height: 50%;
+  height: 60%;
   background-size: cover;
   background-position: center;
 }
@@ -1209,4 +1224,10 @@ h2 {
 .projects__link-btn {
   text-decoration: none;
   color: #58545a;
+}
+
+@media (max-width: 576px) {
+  .projects__card {
+    margin: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
