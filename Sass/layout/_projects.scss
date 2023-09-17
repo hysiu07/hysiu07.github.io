@@ -5,7 +5,15 @@
 	flex-wrap: wrap;
 	padding: 5%;
 	width: 100%;
-
+	.type-script-icon{
+		width: 27px;
+		height: 27px;
+	}
+	&__technologies {
+		i{
+			font-size: 3rem;
+		}
+	}
 	&__card {
 		display: flex;
 		flex-direction: column;
@@ -52,6 +60,9 @@
 	}
 	&__img-pro-gamers {
 		background-image: url('../../portfolio-react/img-portfolio-react/pro-gamers.jpg');
+	}
+	&__img-travel-agency {
+		background-image: url('../../portfolio-react/img-portfolio-react/travel-agency.jpg');
 	}
 	&__text {
 		margin-top: 10px;

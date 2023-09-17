@@ -1134,6 +1134,13 @@ h2 {
   padding: 5%;
   width: 100%;
 }
+.projects .type-script-icon {
+  width: 27px;
+  height: 27px;
+}
+.projects__technologies i {
+  font-size: 3rem;
+}
 .projects__card {
   display: flex;
   flex-direction: column;
@@ -1178,6 +1185,9 @@ h2 {
 }
 .projects__img-pro-gamers {
   background-image: url("../../portfolio-react/img-portfolio-react/pro-gamers.jpg");
+}
+.projects__img-travel-agency {
+  background-image: url("../../portfolio-react/img-portfolio-react/travel-agency.jpg");
 }
 .projects__text {
   margin-top: 10px;
