@@ -72,6 +72,10 @@
 		font-family: $text-font;
 		color: $color-text;
 	}
+	.bold-text{
+		font-weight: bold;
+
+	}
 	&__link-github {
 		.fa-github {
 			margin: 20px 0;

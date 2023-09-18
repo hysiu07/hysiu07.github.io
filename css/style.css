@@ -1211,6 +1211,9 @@ h2 {
   font-family: "Kumbh Sans", "sans-serif";
   color: #58545a;
 }
+.projects .bold-text {
+  font-weight: bold;
+}
 .projects__link-github .fa-github {
   margin: 20px 0;
   font-size: 4rem;
