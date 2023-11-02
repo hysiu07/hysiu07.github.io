@@ -1156,6 +1156,11 @@ h2 {
   font-size: 3rem;
   margin: 5px;
 }
+.projects__technologies .redux-icon {
+  width: 27px;
+  height: 27px;
+  margin-right: 8px;
+}
 .projects__card {
   display: flex;
   flex-direction: column;
