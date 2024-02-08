@@ -8,6 +8,13 @@
 	// flex-wrap: wrap;
 	padding: 5%;
 	width: 100%;
+	h3 {
+		font-size: 2em;
+		font-family: $small-title-font;
+	}
+	hr {
+		margin: 7px 0;
+	}
 	.type-script-icon {
 		width: 27px;
 		height: 27px;
@@ -33,7 +40,7 @@
 		width: 100%;
 		max-width: 1000px;
 		height: 350px;
-		background-color: white;
+		background-color: rgba(255, 255, 255, 0.8);
 		border-radius: 25px;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -62,20 +69,19 @@
 	&__img-pizza-app {
 		background-image: url('../../Img/img-projects/pizza-app-img.jpg');
 	}
-	&__img-social-app {
-		background-image: url('/portfolio-react/img-portfolio-react/social-app-img.jpg');
-	}
+	// &__img-social-app {
+	// 	background-image: url('/portfolio-react/img-portfolio-react/social-app-img.jpg');
+	// }
 	&__img-folio {
 		background-image: url('../../Img/img-projects/folio.jpg');
 		background-position: left;
 	}
 	&__img-pro-gamers {
-		background-image: url('../../portfolio-react/img-portfolio-react/pro-gamers.jpg');
+		background-image: url('../../Img/img-projects/pro-gamers.jpg');
 	}
 	&__img-travel-agency {
-		// background-image: url('../../Img/img-projects/travel-agency.jpg');
-		// background-position: left;
-		background-color: aqua;
+		background-image: url('../../Img/img-projects/travel-agency.jpg');
+		background-position: left;
 	}
 	&__text {
 		margin-top: 10px;
@@ -105,9 +111,22 @@
 		color: $color-text;
 	}
 }
+@media (max-width: 992px) {
+	.projects {
+		&__card {
+			padding-right: 20px;
+		}
+
+		&__btn {
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+	}
+}
 @media (max-width: 768px) {
 	.projects {
 		&__card {
+			padding-right: 0;
 			flex-direction: column;
 			width: 100%;
 			height: auto;
@@ -120,15 +139,28 @@
 			width: 100%;
 		}
 		&__btn {
-		margin: 0 auto;
-		margin-bottom: 20px;
-	}
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		hr {
+			width: 70%;
+			margin: 10px auto;
+		}
 	}
 }
 @media (max-width: 576px) {
 	.projects {
 		&__card {
 			margin: 20px;
+		}
+		&__info-container {
+			p {
+				font-size: 1.5em;
+			}
+		}
+		hr {
+			width: 50%;
+			margin: 10px auto;
 		}
 	}
 }
