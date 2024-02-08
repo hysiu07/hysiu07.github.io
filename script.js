@@ -82,3 +82,89 @@ const animationTimeLine = () => {
 };
 
 window.addEventListener('scroll', animationTimeLine);
+
+// ----scroll-to-top----
+const scrollBtn = document.querySelector('.scroll-up-button');
+
+const showScrollBtn = () => {
+	const scrollY = window.scrollY;
+	if (scrollY > 1000) {
+		scrollBtn.classList.add('show');
+	} else {
+		scrollBtn.classList.remove('show');
+	}
+};
+window.addEventListener('scroll', showScrollBtn);
+
+const scrolToTop = (event) => {
+	event.stopPropagation();
+
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth',
+	});
+};
+scrollBtn.addEventListener('click', scrolToTop);
+
+// ----show-more-projects---
+const hiddenProjects = document.querySelectorAll('.disabled-project');
+const showMoreProjectsBtn = document.querySelector('.show-more-projects');
+const loader = document.querySelector('.loader');
+let btnStatus = false;
+
+const showLoader = () => {
+	return new Promise((resolve) => {
+		showMoreProjectsBtn.textContent = 'Loading...';
+		setTimeout(() => {
+			resolve();
+		}, 2000);
+	});
+};
+
+const showMoreProjects = async () => {
+	await showLoader();
+
+	if (btnStatus === false) {
+		showMoreProjectsBtn.textContent = 'Hide projects';
+		hiddenProjects.forEach((project) => {
+			project.classList.remove('disabled-project');
+		});
+		btnStatus = true;
+	} else {
+		showMoreProjectsBtn.textContent = 'Show more ...';
+		btnStatus = false;
+		hiddenProjects.forEach((project) => {
+			project.classList.add('disabled-project');
+		});
+	}
+};
+showMoreProjectsBtn.addEventListener('click', showMoreProjects);
+
+// ----vaildate-form----
+
+const inputName = document.querySelector('.input-name');
+const inputEmail = document.querySelector('.input-email');
+const inputText = document.querySelector('.input-text');
+const submit = document.querySelector('.submit-btn');
+
+const validate = () => {
+	console.log(inputName.value, 'text');
+
+	if (
+		inputName.value === '' ||
+		inputEmail.value === '' ||
+		inputText.value === ''
+	) {
+		submit.classList.add('disabled-submit');
+		if (submit.hasAttribute('disabled')) {
+			return;
+		}
+	} else {
+		submit.classList.remove('disabled-submit');
+		submit.removeAttribute('disabled');
+	}
+};
+
+inputEmail.addEventListener('input', validate);
+inputName.addEventListener('input', validate);
+inputText.addEventListener('input', validate);

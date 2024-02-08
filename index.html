@@ -65,6 +65,7 @@
         <img class="header__scroll-icon" src="./Img/scroll-icon.svg" alt="scroll-icon">
     </header>
     <main>
+        <button class="scroll-up-button"><i class="fa-solid fa-angle-up"></i></button>
         <section class="about-me wrapper" id="about-me">
             <h2 class="about-me__title titles">About</h2>
             <span class="about-me__small-title-element title-element"></span>
@@ -120,6 +121,105 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="skills wrapper" id="skills">
+            <h2 class="skills__title titles">Skills</h2>
+            <span class="skills__small-title-element title-element"></span>
+            <div class="skills__container">
+                <div class="skill-box">
+                    <p class="skill-title">HTML</p>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">CSS</p>
+
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">SASS</p>
+
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">Botstrap</p>
+
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">JavaScript</p>
+
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">TypeScript</p>
+
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">React</p>
+
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">Redux/Redux-Saga/Redux-Persist</p>
+
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">NextJS</p>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">Github</p>
+
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">Cypres *basic lvl</p>
+
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">Jest *basic lvl</p>
+
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">Testing Library *basic lvl</p>
+
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">AirTable</p>
+
+                </div>
+                <div class="skill-box disabled">
+                    <div class="tool-tip-info">
+                        <p>Processing...</p>
+                    </div>
+                    <p class="skill-title">Tailwind</p>
+                </div>
+                <div class="skill-box disabled">
+                    <div class="tool-tip-info">
+                        <p>Processing...</p>
+                    </div>
+                    <p class="skill-title">React Nativ</p>
+                </div>
+                <div class="skill-box disabled">
+                    <div class="tool-tip-info">
+                        <p>Processing...</p>
+                    </div>
+                    <p class="skill-title">NodeJS</p>
+
+                </div>
+                <div class="skill-box disabled">
+                    <div class="tool-tip-info">
+                        <p>Processing...</p>
+                    </div>
+                    <p class="skill-title">Expres</p>
+
+                </div>
+                <div class="skill-box disabled">
+                    <div class="tool-tip-info">
+                        <p>Processing...</p>
+                    </div>
+                    <p class="skill-title">MongoDB</p>
+                </div>
+                <div class="skill-box disabled">
+                    <div class="tool-tip-info">
+                        <p>Processing...</p>
+                    </div>
+                    <p class="skill-title">NestJS</p>
+                </div>
+
             </div>
         </section>
         <section class="time-line-section wrapper">
@@ -179,7 +279,6 @@
         </section>
         <section class="portfolio wrapper" id="portfolio">
             <div class="portfolio__square"></div>
-            <!-- <img src="./Img/splash.svg" alt="splash" class="portfolio__splash-img"> -->
             <h2 class="porfolio__title titles">Portfolio</h2>
             <span class="portfolio__title-element title-element"></span>
             <div class="projects">
@@ -248,7 +347,7 @@
                             to project!</a>
                     </button>
                 </div>
-                <!-- <div class="projects__card">
+                <div class="projects__card disabled-project">
                     <div class="projects__img-social-app projects__img"></div>
                     <div class="projects__info-container">
                         <div class="projects__technologies">
@@ -266,27 +365,8 @@
                     <button class="projects__btn btn"><a class="projects__link-btn"
                             href="https://hysiu07.github.io/simple-social-app/" target="_blank">Go to project!</a>
                     </button>
-                </div> -->
-
-                <div class="projects__card">
-                    <div class="projects__img-holidays projects__img"></div>
-                    <div class="projects__info-container">
-                        <div class="projects__technologies">
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-js"></i>
-                        </div>
-                        <hr>
-                        <h3>Website-project - Holiday</h3>
-                        <hr>
-                        <a href="https://github.com/hysiu07/web-holidays" class="projects__link-github"><i
-                                class="fa-brands fa-github"></i></a>
-                    </div>
-                    <button class="projects__btn btn"><a class="projects__link-btn"
-                            href="https://hysiu07.github.io/web-holidays/" target="_blank">Go to project!</a>
-                    </button>
                 </div>
-                <div class="projects__card">
+                <div class="projects__card disabled-project">
                     <div class="projects__img-spa projects__img"></div>
                     <div class="projects__info-container">
                         <div class="projects__technologies">
@@ -305,7 +385,26 @@
                     </button>
                 </div>
 
-                <div class="projects__card">
+                <div class="projects__card disabled-project">
+                    <div class="projects__img-holidays projects__img"></div>
+                    <div class="projects__info-container">
+                        <div class="projects__technologies">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <hr>
+                        <h3>Website-project - Holiday</h3>
+                        <hr>
+                        <a href="https://github.com/hysiu07/web-holidays" class="projects__link-github"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                    <button class="projects__btn btn"><a class="projects__link-btn"
+                            href="https://hysiu07.github.io/web-holidays/" target="_blank">Go to project!</a>
+                    </button>
+                </div>
+
+                <div class="projects__card disabled-project">
                     <div class="projects__img-pro-gamers projects__img"></div>
                     <div class="projects__info-container">
                         <div class="projects__technologies">
@@ -323,21 +422,10 @@
                             href="https://hysiu07.github.io/pro-gamers/" target="_blank">Go to project!</a>
                     </button>
                 </div>
-
+                <button class="show-more-projects btn">
+                    Show more...
+                </button>
             </div>
-            <!-- <div class="portfolio__cards">
-                <div class="portfolio__card">
-                    <i class="fa-brands fa-sass"></i>
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-js"></i>
-                    <i class="fa-brands fa-react"></i>
-                    <img class="fa-brands type-script-icon" src="./Img/type-script.svg" alt="type-script-icon">
-                    <a href="./portfolio-react/index-portfolio-react.html" class="portfolio__card-link">
-                        <p>My projects</p>
-                    </a>
-                </div>
-
-            </div> -->
         </section>
         <section class="contact wrapper" id="contact">
             <h2 class="contact__title titles">Contact</h2>
@@ -345,10 +433,11 @@
             <div class="contact__container">
 
                 <form action="https://formspree.io/f/mqkonjkn" method="POST">
-                    <input type="text" name="text" placeholder="Name">
-                    <input type="email" name="email" placeholder="Email">
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button type="submit" class="contact__btn-send-message">Send Message</button>
+                    <input type="text" name="text" placeholder="Name" class="input-name">
+                    <input type="email" name="email" placeholder="Email" class="input-email">
+                    <textarea name="message" placeholder="Message" class="input-text"></textarea>
+                    <button type="submit" class="contact__btn-send-message submit-btn disabled-submit" disabled>Send
+                        Message</button>
                 </form>
                 <div class="contact__info-box">
                     <div class="contact__telephone">
