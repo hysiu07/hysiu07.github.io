@@ -1078,12 +1078,10 @@ h2 {
 .projects__card {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   z-index: 300;
-  padding-bottom: 20px;
   margin: 50px;
-  padding: 20px;
   width: 100%;
   max-width: 1000px;
   height: 350px;
@@ -1093,12 +1091,13 @@ h2 {
   overflow: hidden;
 }
 .projects__info-container {
-  padding: 4%;
+  padding: 2%;
+  width: 30%;
   text-align: center;
 }
 .projects__img {
-  width: 40%;
-  height: 60%;
+  width: 50%;
+  height: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -1124,8 +1123,7 @@ h2 {
   background-image: url("../../portfolio-react/img-portfolio-react/pro-gamers.jpg");
 }
 .projects__img-travel-agency {
-  background-image: url("../../Img/img-projects/travel-agency.jpg");
-  background-position: left;
+  background-color: aqua;
 }
 .projects__text {
   margin-top: 10px;
@@ -1142,6 +1140,7 @@ h2 {
   color: #58545a;
 }
 .projects__btn {
+  margin: 0 auto;
   border: 2px solid #58545a;
 }
 .projects__btn:hover {
@@ -1156,7 +1155,18 @@ h2 {
   .projects__card {
     flex-direction: column;
     width: 100%;
-    height: 500px;
+    height: auto;
+  }
+  .projects__img {
+    width: 100%;
+    height: 300px;
+  }
+  .projects__info-container {
+    width: 100%;
+  }
+  .projects__btn {
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 576px) {
