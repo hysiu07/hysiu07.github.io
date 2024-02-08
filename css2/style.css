@@ -1184,6 +1184,9 @@ h2 {
 .projects__img-pizza-app {
   background-image: url("../../Img/img-projects/pizza-app-img.jpg");
 }
+.projects__img-social-app {
+  background-image: url("../../Img/img-projects/social-app-img.jpg");
+}
 .projects__img-folio {
   background-image: url("../../Img/img-projects/folio.jpg");
   background-position: left;
