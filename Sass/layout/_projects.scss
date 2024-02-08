@@ -1,8 +1,11 @@
 .projects {
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	// justify-content: space-evenly;
 
-	flex-wrap: wrap;
+	// flex-wrap: wrap;
 	padding: 5%;
 	width: 100%;
 	.type-script-icon {
@@ -22,13 +25,16 @@
 	}
 	&__card {
 		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		flex-direction: row;
+		justify-content: space-around;
 		align-items: center;
+		z-index: 300;
 		padding-bottom: 20px;
 		margin: 50px;
-		width: 300px;
-		height: 500px;
+		padding: 20px;
+		width: 100%;
+		max-width: 1000px;
+		height: 350px;
 		background-color: white;
 		border-radius: 25px;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -41,34 +47,34 @@
 		text-align: center;
 	}
 	&__img {
-		width: 100%;
+		width: 40%;
 		height: 60%;
 		background-size: cover;
 		background-position: center;
 	}
 	&__img-holidays {
-		background-image: url('../../portfolio-react/img-portfolio-react/website-holidays.jpg');
+		background-image: url('../../Img/img-projects/website-holidays.jpg');
 	}
 	&__img-spa {
-		background-image: url('../../portfolio-react/img-portfolio-react/spa.jpg');
+		background-image: url('../../Img/img-projects/spa.jpg');
 		background-position-x: right;
 		background-position-y: top;
 	}
 	&__img-pizza-app {
-		background-image: url('/portfolio-react/img-portfolio-react/pizza-app-img.jpg');
+		background-image: url('../../Img/img-projects/pizza-app-img.jpg');
 	}
 	&__img-social-app {
 		background-image: url('/portfolio-react/img-portfolio-react/social-app-img.jpg');
 	}
 	&__img-folio {
-		background-image: url('../../portfolio-react/img-portfolio-react/folio.jpg');
+		background-image: url('../../Img/img-projects/folio.jpg');
 		background-position: left;
 	}
 	&__img-pro-gamers {
 		background-image: url('../../portfolio-react/img-portfolio-react/pro-gamers.jpg');
 	}
 	&__img-travel-agency {
-		background-image: url('../../portfolio-react/img-portfolio-react/travel-agency.jpg');
+		background-image: url('../../Img/img-projects/travel-agency.jpg');
 		background-position: left;
 	}
 	&__text {
@@ -98,7 +104,15 @@
 		color: $color-text;
 	}
 }
-
+@media (max-width: 768px) {
+	.projects {
+		&__card {
+			flex-direction: column;
+			width: 100%;
+			height: 500px;
+		}
+	}
+}
 @media (max-width: 576px) {
 	.projects {
 		&__card {
