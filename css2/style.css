@@ -1145,6 +1145,11 @@ h2 {
   height: 27px;
   margin-right: 8px;
 }
+.projects__technologies .next-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
 .projects__card {
   display: flex;
   flex-direction: row;
@@ -1172,6 +1177,9 @@ h2 {
   height: 100%;
   background-size: cover;
   background-position: center;
+}
+.projects__img-yourCar {
+  background-image: url("../../Img/img-projects/yourCar.jpg");
 }
 .projects__img-holidays {
   background-image: url("../../Img/img-projects/website-holidays.jpg");
